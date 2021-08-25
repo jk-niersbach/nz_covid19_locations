@@ -30,7 +30,7 @@
 
 <body>
   <h2>New Zealand Covid19 Locations of Interest checker</h2>
-  <p><label>Site updated at:</label> 1:52 AM on 26 Aug 2021. <label>Source data last updated at:</label> <strong>8:07 PM on 25 Aug 2021</strong>.
+  <p><label>Site updated at:</label> 2:05 AM on 26 Aug 2021. <label>Source data last updated at:</label> <strong>8:07 PM on 25 Aug 2021</strong>.
 
 
     <table id="locations" class="display">
@@ -5944,8 +5944,9 @@ Patrons - Self-monitor for COVID-19 symptoms for 14 days. If symptoms develop, g
   official list</a> as the main source of information, this site is offered for support only.</small></p>
   
   <script>
+    var dataTable = $('#locations');
     $(document).ready( function () {
-      $('#locations').DataTable( {
+      dataTable = $('#locations').DataTable( {
         "scrollY": 800,
         "scrollX": true,
         "pageLength": 50,
@@ -5960,11 +5961,13 @@ Patrons - Self-monitor for COVID-19 symptoms for 14 days. If symptoms develop, g
       $(foo).show();
       $(foo).next().hide();
       $(foo).next().next().show();
+      dataTable.columns.adjust();
     }
     function hideHistory(foo) {
       $(foo).hide();
       $(foo).next().show();
       $(foo).next().next().hide();
+      dataTable.columns.adjust();
     }
   </script>
 </body>

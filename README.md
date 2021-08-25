@@ -8,5 +8,6 @@ Built with [DataTables.js](https://datatables.net).
 Planned updates:
 - auto-updating when source data is updated
 - improve appearance
+- move history to a row below, rather than an inline cell
 
 Feedback here or on [Twitter](https://twitter.com/jk_niersbach).
