@@ -7,5 +7,6 @@ Built with [DataTables.js](datatables.net).
 
 Planned updates:
 - auto-updating when source data is updated
+- improve appearance
 
 Feedback here or on [Twitter](twitter.com/jk_niersbach).
