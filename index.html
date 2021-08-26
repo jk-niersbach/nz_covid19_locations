@@ -46,9 +46,10 @@
     .modal-content {
       background-color: #fefefe;
       margin: 15% auto; 
+      max-width: 1200px;
       padding: 20px;
       border: 1px solid #888;
-      width: 80%; /* Could be more or less, depending on screen size */
+      width: 80%;
     }
 
   </style>
@@ -6026,6 +6027,7 @@ Patrons - Self-monitor for COVID-19 symptoms for 14 days. If symptoms develop, g
   <a href="https://github.com/minhealthnz/nz-covid-data/commits/main">GitHub</a>. Please use the 
   <a href="https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-health-advice-public/contact-tracing-covid-19/covid-19-contact-tracing-locations-interest">
   official list</a> as the main source of information, this site is offered for support only.</small></p>
+  <p><small>For a map and location-based view, see <a href="https://covid19nearme.co.nz/state/nz"></a></small></p>
   
   <script>
     var dataTable = $('#locations');
@@ -6045,20 +6047,10 @@ Patrons - Self-monitor for COVID-19 symptoms for 14 days. If symptoms develop, g
       dataTable.columns.adjust();
     } );
     $('.modal').click(function(){
-      console.log(this);
       $(this).hide();
     });
     function showHistory(foo) {
-      $(foo).show();
-      //$(foo).next().hide();
-      //$(foo).next().next().show();
-      dataTable.columns.adjust();      
-    };
-    function hideHistory(foo) {
-      $(foo).hide();
-      //$(foo).next().show();
-      //$(foo).next().next().hide();
-      dataTable.columns.adjust();
+      $(foo).show();   
     };
   </script>
 </div></body>
