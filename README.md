@@ -1,3 +1,7 @@
+
+**This project has been discontinued given that Locations of Interest are no longer being updated.**
+
+
 ### Current content
 
 NZ Covid19 Location of Interest checker to provide additional searching and sorting.
